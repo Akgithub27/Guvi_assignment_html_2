@@ -1,80 +1,87 @@
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #f2f8fb;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
 }
 
 
 .container {
     width: 90%;
     margin: auto;
-    display: flex;
-    gap: 30px;
-    padding: 20px 0;
-}
-
-
-.left, .right {
-    width: 50%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 
 .title {
     text-align: center;
-    color: #58a7c8;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #333;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
 }
 
-.subtitle {
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 20px;
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
-.section-title {
-    color: #2b7ca7;
-    margin-top: 20px;
+
+.card {
+    border: 2px solid #ddd;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+    margin-top: 0;
     font-size: 20px;
-    border-bottom: 3px solid #93d4f5;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #333;
 }
 
 
-.icons-row {
-    display: flex;
-    gap: 20px;
-    font-size: 40px;
-    margin: 15px 0;
+.poster {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 
-.stats p {
-    margin: 8px 0;
-    font-size: 16px;
-}
-
-
-.list {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.list li {
-    padding: 10px;
-    margin-bottom: 8px;
+.book-btn, .sold-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
     border-radius: 5px;
+    transition: opacity 0.2s ease;
 }
 
 
-.health-box {
-    border-left: 5px solid #ff7d7d;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+.book-btn {
+    background: #4CAF50;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.book-btn:hover {
+    opacity: 0.85;
+}
+
+
+.sold-btn {
+    background: #e57373;
+    color: white;
+    cursor: not-allowed;
 }
